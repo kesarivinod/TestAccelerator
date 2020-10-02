@@ -51,9 +51,9 @@ pipeline {
 		 }
 		 stage('Deploy Application') {
         steps {
-           sh label: '', script: 'brew services stop tomcat'
+           
 	   fileOperations([fileCopyOperation(excludes: '', flattenFiles: false, includes: '$WORKSPACE/testaccelerator/target/*.war', renameFiles: false, sourceCaptureExpression: '', targetLocation: '/usr/local/Cellar/tomcat/9.0.38/libexec/webapps', targetNameExpression: '')])
-           sh label: '', script: 'brew services restart tomcat'
+           
          }  
       }	
      
