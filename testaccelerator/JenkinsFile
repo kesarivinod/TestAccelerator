@@ -52,7 +52,7 @@ pipeline {
 		 stage('Deploy Application') {
         steps {
            
-	   fileOperations([fileCopyOperation(excludes: '', flattenFiles: false, includes: 'testaccelerator/target/TestAccelerator.war', renameFiles: false, sourceCaptureExpression: '', targetLocation: '/usr/local/Cellar/tomcat/9.0.38/libexec/webapps', targetNameExpression: '')])
+	   fileOperations([fileCopyOperation(excludes: '', flattenFiles: false, includes: 'testaccelerator/target/*.war', renameFiles: false, sourceCaptureExpression: '', targetLocation: '/usr/local/Cellar/tomcat/9.0.38/libexec/webapps', targetNameExpression: '')])
            
          }  
       }	
