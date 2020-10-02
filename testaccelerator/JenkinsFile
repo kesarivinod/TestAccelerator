@@ -16,7 +16,7 @@ pipeline {
          }
          
       }
-	  stage('SonarQube Scan') 
+	  /*stage('SonarQube Scan') 
 			{							
 				steps {
 				  
@@ -33,7 +33,7 @@ pipeline {
 						}
 					}					
 				}					
-			}    
+			}  */  
 			
 		stage('Run UnitTests') {
         steps {
