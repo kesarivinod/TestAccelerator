@@ -5,7 +5,7 @@ pipeline {
       stage('Pull code') {
          steps {
 	    cleanWs()
-            git changelog: false, credentialsId: '39c65eca-4ef0-4c93-9fd1-7c150b3093bb', poll: false, url: 'https://github.com/kesarivinod/TestAccelerator.git'
+            git branch: 'main', changelog: false, credentialsId: '39c65eca-4ef0-4c93-9fd1-7c150b3093bb', poll: false, url: 'https://github.com/kesarivinod/TestAccelerator.git'
          }
          
       }
