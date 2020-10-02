@@ -12,6 +12,7 @@ pipeline {
        stage('Build & Package') {
         steps {
         
+	    sh label: '', script: 'cd testaccelerator'
 	    sh label: '', script: '/usr/local/Cellar/maven/3.6.3_1/bin/mvn package'
          
          }
