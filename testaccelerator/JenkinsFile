@@ -11,7 +11,7 @@ pipeline {
       }
        stage('Build & Package') {
         steps {
-            bat label: '', script: 'mvn package'
+            sh label: '', script: 'mvn package'
          
          }
          
